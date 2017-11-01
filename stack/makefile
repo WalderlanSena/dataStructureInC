@@ -1,5 +1,8 @@
 # Compilação automática para sistemas operacionais GNU/LINUX e MACOSX
+CC=g++
+SOFTWARE=stack.cpp
+OUT=stack
 all:
-	g++ stack.cpp -o stack
+	$(CC) $(SOFTWARE) -o $(OUT)
 clean:
-	rm -f stack
+	rm -f $(OUT)
